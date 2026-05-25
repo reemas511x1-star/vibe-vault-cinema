@@ -12,6 +12,7 @@ const navLinks = [
   { to: '/discover', label: 'Discover', labelAr: 'اكتشف', icon: '🔭' },
   { to: '/stats', label: 'Stats', labelAr: 'الإحصائيات', icon: '📊' },
   { to: '/watch-now', label: 'What to Watch', labelAr: 'ماذا أشاهد؟', icon: '🎯' },
+  { to: '/wosh-ashof', label: 'وش أشوف؟', labelAr: 'وش أشوف؟', icon: '✨' },
 ];
 
 export default function Navbar({ onAuthClick }) {

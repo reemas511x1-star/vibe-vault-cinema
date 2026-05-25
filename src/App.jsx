@@ -18,6 +18,7 @@ const WatchNowPage    = lazy(() => import('./pages/WatchNowPage'));
 const WeeklyPage      = lazy(() => import('./pages/WeeklyPage'));
 const ProfilePage     = lazy(() => import('./pages/ProfilePage'));
 const DiscoverPage    = lazy(() => import('./pages/DiscoverPage'));
+const WoshAshofPage   = lazy(() => import('./pages/WoshAshofPage'));
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth();
@@ -53,6 +54,7 @@ function AppShell() {
               <Route path="/watch-now"      element={<ProtectedRoute><WatchNowPage /></ProtectedRoute>} />
               <Route path="/weekly"         element={<ProtectedRoute><WeeklyPage /></ProtectedRoute>} />
               <Route path="/profile"        element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
+              <Route path="/wosh-ashof"    element={<WoshAshofPage />} />
               <Route path="*"              element={<Navigate to="/" replace />} />
             </Routes>
           </AnimatePresence>
